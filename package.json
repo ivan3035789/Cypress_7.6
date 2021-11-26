@@ -1,0 +1,21 @@
+{
+  "name": "cypres1",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run -b chrome --headed",
+    "headTestChrome": "npx cypress run -b chrome --headed -C cypress.env.json",
+    "headlessTestChrome": "npx cypress run -b chrome",
+    "headTestElectron": "npx cypress run -b electron --headed -C cypress.json",
+    "headlessTestElectron": "npx cypress run -b electron"
+  },
+  "author": "ivan",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "cypress": "^9.0.0",
+    "eslint": "^8.2.0",
+    "prettier": "^2.4.1"
+  }
+}
